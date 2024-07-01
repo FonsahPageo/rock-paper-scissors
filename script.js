@@ -6,7 +6,22 @@ function getComputerChoice() {
 
 // get human's choice
 function getHumanChoice() {
-    let humanChoice = prompt("Pick Rock, Paper or Scissors").toLowerCase();
+    // let humanChoice = prompt("Pick Rock, Paper or Scissors").toLowerCase();
+    let humanChoice = prompt("Select 1, 2 or 3 for rock, paper, scissors respectively");
+    switch (humanChoice) {
+        case "1":
+        case "rock":
+            return "rock";
+        case "2":
+        case "paper":
+            return "paper";
+        case "3":
+        case "scissors":
+            return "scissors";
+        default:
+            alert("Invalid choice. Please enter 1, 2 or 3 for rock, paper, scissors respectively.");
+            return getHumanChoice(); 
+    }
     return humanChoice;
 }
 
