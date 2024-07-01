@@ -6,3 +6,10 @@ function getComputerChoice() {
 
 console.log("Computer chose", getComputerChoice());
 
+// get human's choice
+function getHumanChoice() {
+    let humanChoice = prompt("Enter a number from 1 to 3 representing rock, paper, scissors respectively: ");
+}
+
+console.log("You chose ", getHumanChoice());
+
