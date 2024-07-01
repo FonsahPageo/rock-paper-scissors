@@ -30,3 +30,19 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
+let gameRound;
+
+function playGame() {
+    for (i = 0; i < 5; i++) {
+        round = playRound(humanSelection, computerSelection);
+    }
+    if (computerScore > humanScore) {
+        alert("Computer won with", computerScore, "points");
+    } else {
+        alert("You won with", humanScore, "points");
+    }
+}
+
+playGame();
